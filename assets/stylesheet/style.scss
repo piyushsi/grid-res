@@ -1,0 +1,310 @@
+@import "reset";
+@import "vars";
+@import "general";
+@import "base";
+@import "grid";
+
+// Header
+.header {
+  padding: 1rem 0;
+  position: absolute;
+  width: 100%;
+  a {
+    color: $tertiary;
+  }
+}
+.logo {
+  h1 {
+    font-size: 2rem;
+  }
+}
+.nav-bar__menu-item {
+  margin-left: 2rem;
+  a {
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    letter-spacing: 0.03rem;
+  }
+  .active {
+    color: $secondary;
+  }
+}
+
+// Hero
+.hero {
+  background: $heroBg;
+}
+.hero-grid {
+  align-items: center;
+}
+.hero-item1 {
+  font-size: 0;
+}
+.hero-item2 {
+  padding: 0 3rem;
+  h2 {
+    padding: 2rem 0;
+  }
+}
+
+.item2-heading {
+  color: grey;
+}
+
+.btn {
+  border-radius: 1.2rem;
+  border: 0.1rem solid black;
+  padding: 0.3rem 3rem;
+  background: #F0E2D7;
+  margin: 1rem 0rem;
+}
+
+
+
+// About
+
+.about-item1 {
+  padding: 2rem 3rem;
+}
+.about-item2 {
+  img {
+    height: 100%;
+  }
+}
+
+.about-item1-head {
+  color: $secondary;
+  padding: 2rem 0;
+
+}
+.about-item3 {
+  background: $secondary;
+}
+
+.about-item3-head {
+  color: $baseColor;
+  padding: 0.6rem 0;
+}
+
+progress {
+  width: 100%;
+}
+.about-item3-progress {
+  display: flex;
+  padding: .7rem 0 0 0;
+  color: black;
+  justify-content: space-between;
+}
+
+.about-span{
+  color: $baseColor;
+}
+
+
+// Feature
+.feature__item1 {
+  background: $secondary;
+  color: $baseColor;
+}
+.feature__item2 {
+  background: $primary;
+  color: $baseColor;
+}
+.feature__item3 {
+  background: $tertiary;
+  color: $baseColor;
+}
+.feature__item4 {
+  background: $baseColor;
+}
+
+.feature-nav {
+  color: white;
+  font-size: 1.7rem;
+}
+
+.feature-nav-item4 {
+  color: #161616;
+}
+.feature-head {
+  padding: 2rem 0;
+}
+
+// Experience
+.experience-item1 {
+  background: url(../media/experience-img.jpg) no-repeat;
+  background-size: cover;
+}
+
+.experience-bck {
+  background: $primary;
+  color: $baseColor;
+}
+
+.exp-nav {
+  color: white;
+  font-size: 1.6rem;
+  padding-right: 1rem;
+}
+
+.experience-font {
+  padding: 2rem 0 1rem 0;
+}
+
+.exp-span {
+  font-size: 0.9rem;
+  color: #161616;
+}
+
+.experience-bck-item2 {
+  background: $secondary;
+  color: $baseColor;
+}
+
+.experience-item2 {
+  background: url(../media/education-img.jpg) no-repeat;
+  background-size: cover;
+}
+// Contact
+.contact {
+  background: $primary;
+}
+.contact__item3 {
+  background: $tertiary;
+}
+
+.contact-fill {
+  width: 100%;
+  border: 0;
+  box-shadow: none;
+  outline: 0;
+  border-bottom: 0.1rem solid #ECAF4E;
+  background: $primary;
+  padding: 3rem 0 1rem 0;
+}
+
+.contact-font {
+  color: white;
+}
+
+.btn1 {
+  border-radius: 2rem;
+  border: 0.1rem solid white;
+  padding: 1rem 12rem;
+  background: $baseColor;
+  margin-top: 3rem;
+}
+
+::placeholder {
+  color: white;
+}
+
+.img-responsive1 {
+  width: 100%;
+  height: 100%;
+}
+
+.contact-item3{
+  color: white;
+}
+
+.contact-address {
+  padding: 2rem 0 1rem 0;
+}
+
+.yellow {
+  color: $secondary;
+}
+.contact-ph{
+  padding:0 1rem;
+}
+.flex-start {
+  padding: .7rem 0;
+}
+
+/*Map*/
+
+.map {
+  background: $primary;
+  text-align: center;
+  padding: 1.7rem 10rem;
+}
+
+.framemap {
+  width: 100%;
+  height: 30rem;
+}
+
+/*footer*/
+
+.footer {
+  text-align: center;
+  padding: 8rem;
+}
+
+.foot {
+  font-size: 1.3rem;
+  color: grey;
+}
+
+.fontawesome {
+  font-size: 1.2rem;
+  padding-top: 1.8rem;
+}
+
+.foot-font {
+  color: grey;
+  padding: 1rem;
+}
+//nav-menu for mobile
+#toggle {
+  display: none;
+}
+.nav-menu {
+  display:none;
+}
+.bar {
+  display:none;
+}
+
+@media all and (max-width: 768px) {
+  .nav-bar__menu {
+    display: none;
+  }
+  .experience-item1,
+  .experience-item2 {
+    height: 300px;
+  }
+nav-bar__menu {
+    display: none;
+  }
+
+  .experience-item1,
+.experience-item2 {
+    height: 300px;
+  }
+   .nav-menu {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    height: 230px;
+    background: white;
+    text-align: center;
+    padding-top: 70px;
+  }
+  .nav-menu__item a {
+    color: #130e0e;
+  }
+   .bar {
+    display: inline-block;
+    color: black;
+    font-size: 24px;
+    position: relative;
+    z-index: 1;
+  }
+   #toggle:checked ~ .nav-menu {
+    display: inline-block;
+  }
+}

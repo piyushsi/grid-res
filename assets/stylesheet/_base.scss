@@ -1,0 +1,63 @@
+// Root Element
+html {
+  font-size: 16px;
+}
+body {
+  font-family: $font-family;
+  line-height: 1.5;
+}
+// Heading Elements
+h1 {
+  font-size: 2.5rem;
+}
+h2 {
+  font-size: 2rem;
+}
+h3 {
+  font-size: 1.5rem;
+}
+h4 {
+  font-size: 1rem;
+}
+h5 {
+  font-size: 0.75rem;
+}
+h6 {
+  font-size: 0.5rem;
+}
+
+// Paragraph element
+p {
+  font-size: 1rem;
+}
+
+// Flex element
+.flex-between {
+  @extend %flex-between;
+}
+.flex-start {
+  @extend %flex-start;
+}
+
+// Align elements
+.text-center {
+  text-align: center;
+}
+.text-left {
+  text-align: left;
+}
+.text-right {
+  text-align: right;
+}
+
+// Responsive image
+.img-responsive {
+  width: 100%;
+  height: auto;
+}
+
+@media all and (max-width: 768px) {
+  html {
+    font-size: 10px;
+  }
+}

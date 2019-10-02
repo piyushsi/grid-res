@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>CSS Grid Project</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/stylesheet/style.css" />
+    <!-- Font Family -->
+    <link href="https://fonts.googleapis.com/css?family=Armata&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/8bc5acd820.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <!-- Heaader -->
+<header class="header">
+      <nav class="nav-bar flex-between wrapper">
+        <a class="logo" href="#"><h1>Stimulus</h1></a>
+        <ul class="nav-bar__menu flex-between">
+          <li class="nav-bar__menu-item">
+            <a class="active" href="#">Home</a>
+          </li>
+          <li class="nav-bar__menu-item"><a href="#">About Me</a></li>
+          <li class="nav-bar__menu-item"><a href="#">Experiences</a></li>
+          <li class="nav-bar__menu-item"><a href="#">Testimonial</a></li>
+          <li class="nav-bar__menu-item"><a href="#">Contact</a></li>
+        </ul>
+        <label class="bar" for="toggle">
+          <i class="fa fa-bars" aria-hidden="true"></i>
+        </label>
+        <input id="toggle" type="checkbox" />
+          <ul class="flex nav-menu">
+            <li class="nav-menu__item">
+              <a href="#">Home</a>
+            </li>
+            <li class="nav-menu__item">
+              <a href="#">About</a>
+            </li>
+            <li class="nav-menu__item">
+              <a href="#">Experiences</a>
+            </li>
+             <li class="nav-menu__item">
+              <a href="#">Testimonial</a>
+            </li>
+             <li class="nav-menu__item">
+              <a href="#">Contact</a>
+            </li>
+          </ul>
+      </nav>
+
+    </header>
+    <main>
+      <!-- Hero -->
+      <section class="hero">
+        <div class="grid hero-grid">
+          <div class="span2 hero-item1">
+            <img
+              class="img-responsive"
+              src="assets/media/home-img.jpg"
+              alt=""
+            />
+          </div>
+          <div class="span2 hero-item2">
+            <h4 class="item2-heading">Welcome to my websites</h4>
+            <h2>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+            </h2>
+            <p class="item2-heading">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum
+              odit autem, amet minima rem error deserunt at aut ducimus
+              reiciendis eius, exercitationem repellendus, perferendis unde?
+              Commodi consequuntur assumenda eum obcaecati?
+            </p>
+            <button class="btn">Get started</button>
+          </div>
+        </div>
+      </section>
+      <!-- About -->
+      <section class="about">
+        <div class="grid">
+          <div class="span2 about-item1 padding">
+            <h2>Lorem Ipsum</h2>
+            <h5 class="about-item1-head">
+              Lorem, ipsum dolor sit.
+            </h5>
+            <p class="item2-heading">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis
+              quod voluptas mollitia officiis facilis autem cupiditate incidunt,
+              nihil at illum exercitationem voluptatem saepe deserunt ut omnis
+              quos. Sequi, amet modi.
+            </p>
+          </div>
+          <div class="about-item2" style="font-size: 0">
+            <img
+              class="img-responsive"
+              src="assets/media/about-img.jpg"
+              alt="About"
+            />
+          </div>
+          <div class="about-item3 padding">
+            <h2 class="about-item3-head">My skills</h2>
+            <h5 class="about-item3-head">Photoshop. HTML CSS JS, Web Design</h5>
+            <div>
+              <h5 class="about-item3-progress">Frontend Design <span class="about-span">90%</span></h5>
+              <progress value="90" max="100"></progress>
+
+              <h5 class="about-item3-progress">Backend processing <span class="about-span">70%</span></h5>
+              <progress value="70" max="100"></progress>
+
+              <h5 class="about-item3-progress">HTML & CSS3 <span class="about-span">80%</span></h5>
+              <progress value="80" max="100"></progress>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Features -->
+      <section class="feature">
+        <div class="grid text-center">
+          <div class="padding feature__item1">
+            <a class="feature-nav" href="#"><i class="fa fa-desktop"></i></a>
+            <h3 class="feature-head">Interface Design</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. soluta
+              alias quia? Repellat?
+            </p>
+          </div>
+          <div class="padding feature__item2">
+            <a class="feature-nav" href="#"><i class="fa fa-paper-plane"></i></a>
+            <h3 class="feature-head">Media Strategy</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. soluta
+              alias quia? Repellat?
+            </p>
+          </div>
+          <div class="padding feature__item3">
+            <a class="feature-nav" href="#"><i class="fa fa-table"></i></a>
+            <h3 class="feature-head">Mobile App</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. soluta
+              alias quia? Repellat?
+            </p>
+          </div>
+          <div class="padding feature__item4">
+            <a class="feature-nav-item4 feature-nav" href="#"><i class="fab fa-html5"></i></a>
+            <h3 class="feature-head">Coding</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. soluta
+              alias quia? Repellat?
+            </p>
+          </div>
+        </div>
+      </section>
+      <!-- Experiences -->
+      <section>
+        <div class="grid experience-grid">
+          <div class="span2 experience-item1"></div>
+          <div class="padding span2 experience-bck">
+            <h2>My Experiences</h2>
+            <h5>
+              Lorem ipsum dolor sit.
+            </h5>
+
+            <div class="flex-start experience-font">
+              <div><a class="exp-nav" href="#"><i class="fas fa-laptop"></i></a></div>
+              <div>
+                <h3>Graphic Designer <span class="exp-span">2014 jul - 2015 jun</span></h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </p>
+              </div>
+            </div>
+            <div class="flex-start">
+              <div><a class="exp-nav" href="#"><i class="fas fa-laptop"></i></a></div>
+              <div>
+                <h3>Graphic Designer <span class="exp-span">2014 jul - 2015 jun</span></h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="grid experience-grid">
+          <div class="padding span2 experience-bck-item2">
+            <h2>My Experiences</h2>
+            <h5>
+              Lorem ipsum dolor sit.
+            </h5>
+
+            <div class="flex-start experience-font">
+              <div><a class="exp-nav" href="#"><i class="fas fa-laptop"></i></a></div>
+              <div>
+                <h3>Graphic Designer <span class="exp-span">2014 jul - 2015 jun</span></h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </p>
+              </div>
+            </div>
+            <div class="flex-start">
+              <div><a class="exp-nav" href="#"><i class="fas fa-laptop"></i></a></div>
+              <div>
+                <h3>Graphic Designer <span class="exp-span">2014 jul - 2015 jun</span></h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="span2 experience-item2"></div>
+        </div>
+      </section>
+
+
+      <!-- contact -->
+      <section class="contact">
+        <div class="grid">
+          <div class="span2 padding">
+            <h2 class="contact-font">Say Hello..</h2>
+            <p class="contact-font">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+            </p>
+            <form action="">
+              <div>
+                <input class="contact-fill" type="text" placeholder="Your Name" />
+              </div>
+              
+              <div>
+                <input class="contact-fill" type="email" name="" id="" placeholder="Your Email" /> 
+              </div>
+              <div>
+                <textarea class="contact-fill"
+                name=""
+                id=""
+                rows="4"
+                placeholder="Write your message"
+              ></textarea>
+              </div>
+              <button class="btn1">Send</button>
+              
+            </form>
+          </div>
+          <div style="font-size: 0">
+            <img
+              class="img-responsive1"
+              src="assets/media/contact-img.jpg"
+              alt=""
+            />
+          </div>
+          <div class="padding contact__item3">
+            <h3 class="contact-item3">Visit my office</h3>
+            <h5 class="contact-item3 contact-address">
+              Lorem, ipsum dolor sit ame.
+            </h5>
+            <h3 class="contact-item3 contact-address">Contact</h3>
+            <div class="flex-start">
+              <span class="contact-item3"><i class="fa fa-phone"></i></span>
+              <p class="contact-item3 contact-ph">01-000-0000</p>
+            </div>
+            <div class="flex-start">
+              <span class="contact-item3"><i class="fa fa-envelope"></i></span>
+              <p class="yellow contact-ph">hello@xyz.com</p>
+            </div>
+            <div class="flex-start">
+              <span class="contact-item3"><i class="fa fa-globe"></i></span>
+              <p class="yellow contact-ph">altcampus.io</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Map -->
+
+      <section class="mapping">
+          <div class="map">
+            <iframe class="framemap" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13504.714156683234!2d76.36039843334918!3d32.19941944840217!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391b522c7cd8b85b%3A0x9d68653444d4c03a!2sRakkar%2C%20Himachal%20Pradesh!5e0!3m2!1sen!2sin!4v1569867208136!5m2!1sen!2sin" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+          </div>
+        </div>
+      </section>
+
+      <footer class="footer">
+          <small class="foot">Copyright &copy; 2019 Piyush | template</small>
+          <div class="fontawesome">
+            <a class="foot-font" href="#"><i class="fab fa-facebook"></i></a>
+            <a class="foot-font" href="#"><i class="fab fa-twitter"></i></a>
+            <a class="foot-font" href="#"><i class="fab fa-google-plus"></i></a>
+            <a class="foot-font" href="#"><i class="fab fa-dribbble"></i></a>
+            <a class="foot-font" href="#"><i class="fab fa-linkedin"></i></a>
+          </div>
+          
+        </footer>
+    </main>
+  </body>
+</html>

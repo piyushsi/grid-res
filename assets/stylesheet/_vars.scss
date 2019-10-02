@@ -1,0 +1,17 @@
+$primary: #ec653a;
+$secondary: #ecaf4e;
+$tertiary: #161616;
+$baseColor: #fff;
+$heroBg: #f5e3d7;
+$font-family: "Roboto";
+
+%flex-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+%flex-start {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
